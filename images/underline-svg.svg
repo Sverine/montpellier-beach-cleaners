@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="14px" viewBox="0 0 100 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>Group 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.00012250148 0.384612615 65.7939183 0.384612615 65.7939183 5 0.00012250148 5"></polygon>
+        <polygon id="path-3" points="0 0.0522111265 99.1147541 0.0522111265 99.1147541 5 0 5"></polygon>
+    </defs>
+    <g id="HP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" transform="translate(-110.000000, -2292.000000)">
+            <g id="Group-10" transform="translate(110.000000, 2292.000000)">
+                <g id="Group-3" transform="translate(17.789062, 9.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M1.57809512,3.71833333 C22.4575829,4.145 43.3370707,4.57333333 64.2165585,5 C66.3197049,5.04333333 66.3197049,1.71 64.2165585,1.66666667 C43.3370707,1.24 22.4575829,0.811666667 1.57809512,0.385 C-0.526685366,0.343333333 -0.52505122,3.67666667 1.57809512,3.71833333" id="Fill-1" fill="#10305E" mask="url(#mask-2)"></path>
+                </g>
+                <g id="Group-3" transform="translate(0.789062, 0.000000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M1.57622951,4.995 C18.292623,3.79166667 35.0385246,3.27 51.7959016,3.575 C67.1713115,3.855 82.6532787,5.77 97.9286885,3.29166667 C100.007377,2.95333333 99.1254098,-0.258333333 97.0565574,0.0766666667 C81.092623,2.66833333 64.6270492,0.39 48.5532787,0.193333333 C32.8762295,0.00166666667 17.2139344,0.535 1.57622951,1.66166667 C-0.517213115,1.81333333 -0.533606557,5.14666667 1.57622951,4.995" id="Fill-1" fill="#10305E" mask="url(#mask-4)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
