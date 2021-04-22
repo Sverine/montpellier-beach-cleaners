@@ -1,0 +1,234 @@
+/*---------- GENERAl ----------*/
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-size:14px;
+}
+.main-container{
+    text-align:center;
+}
+figure img{
+    width:100%;
+}
+
+
+/*---------- FONT-WEIGHT, BG-COLOR ----------*/
+.header-title h1, #icons-stripe .icon-container h4 {
+    font-weight: 900;
+}
+.header-title h2, #icons-stripe .icon-container p, #next-events a, #support-us >a{
+    font-weight: 300;
+}
+section h3, .card-title{
+    font-weight:700;
+}
+#icons-stripe, #next-events a, #support-us >a, footer{
+    background-color: #10305E;
+}
+
+/*---------- BUTTONS ANIMATIONS ----------*/
+#next-events >a, #support-us >a{
+    top:0;
+    transition: top ease 80ms;
+    position:relative;
+}
+#next-events >a:hover, #support-us >a:hover{
+    top:-1px;
+}
+
+/*---------- HEADER (NAV & HERO )-----------*/
+
+header{
+    position:relative;
+    max-width:100%;
+}
+
+.header-background figure{
+    position: absolute;
+    z-index:-1;
+    overflow: hidden;
+    width: 100%;
+    top: -33%;
+}
+.header-background figure img{
+    width:150%;
+}
+
+header figure.logo {
+    min-width:65px;
+}
+
+header nav ul li a{
+    font-weight: 700;
+    font-size:12px;
+}
+
+header nav {
+    height:100px;
+}
+
+.header-title{
+    margin-top:20px;
+}
+
+.header-title h1{
+    font-size:30px;
+}
+
+.header-title h1 span{
+    color:rgba(255, 255, 255, 0.6);
+    font-size:22.5px;
+}
+
+.header-title h2{
+    font-size:20px;
+}
+
+/*---------- SECTIONS -----------*/
+section h3{
+    font-weight:700;
+    font-size:30px;
+}
+/*---------- SECTION INTRO -----------*/
+#introduction{
+    margin-top: 80%;
+}
+
+/*---------- SECTION ICONS-STRIPE -----------*/
+
+#icons-stripe .icon-container{
+    max-width:150px;
+}
+#icons-stripe .icon-container figure{
+    max-width:90px;
+}
+
+/*---------- SECTION NEXT-EVENTS -----------*/
+#next-events .card p svg{
+    margin:-4px 4px 0 0;
+}
+
+#next-events .card >img{
+    min-height: 250px;
+}
+
+/*---------- SECTION SUPPORT-US -----------*/
+#support-us figure{
+    max-width:150px;
+}
+#support-us .btns-container a:nth-child(1){
+    background-color:#CFD6DF;
+}
+#support-us .btns-container a:nth-child(2){
+    background-color:#9EABBE;
+}
+#support-us .btns-container a:nth-child(3){
+    background-color:#6D809D;
+}
+#support-us .btns-container a:nth-child(4){
+    background-color:#3F597E;
+}
+
+/*---------- FOOTER -----------*/
+footer .footer-logo figure{
+    max-width:50px;
+}
+
+footer nav li {
+    font-size:14px;
+}
+footer .social-icons-container a{
+    color:unset;
+}
+footer .social-icons-container a img{
+    max-width:18px;
+    max-height:18px;
+    opacity:0.5;
+}
+
+footer p{
+    font-size:10px;
+}
+
+footer p:last-child{
+    font-size:8px;
+}
+
+/*---------- MEDIA QUERIES -----------*/
+@media screen and (min-width:400px){
+    .header-background figure{
+        top:-85%;
+    }
+}
+
+@media screen and (min-width:530px){
+    .header-background figure{
+        top:-125%;
+    }
+    .header-title h1 {
+        font-size: 40px;
+    }
+    .header-title h1 span {
+        font-size: 31.5px;
+    }
+    #next-events >a, #support-us >a{
+        width:60%;
+    }
+}
+
+@media screen and (min-width:642px){
+    .header-background figure {
+        top: -70%;
+    }
+    .header-background figure img{
+        width:100%;
+    }
+    #introduction {
+        margin-top: 50%;
+    }
+    #support-us .btns-container a{
+        max-width:130px !important;
+    }
+}
+
+@media screen and (min-width:800px){
+    .header-background figure {
+        top: -120%;
+    }
+}
+
+@media screen and (min-width:1000px){
+    .header-background figure {
+        top: -170%;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .main-container{
+        -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2); 
+        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
+    }
+    #next-events >a, #support-us >a {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:1320px){
+    .header-background figure {
+        top: -200%;
+    }  
+}
+
+@media screen and (min-width:1400px){
+    .header-background figure {
+        top: -250%;
+    }  
+}
+
+
+
+
+
+
+
