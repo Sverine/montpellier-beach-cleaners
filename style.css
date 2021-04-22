@@ -27,17 +27,35 @@ section h3, .card-title{
     background-color: #10305E;
 }
 
-/*---------- HEADER (NAV & HERO )-----------*/
-header{
-    background-image: url('images/montpellier-background.png');
-    background-size: 150%;
-    background-repeat: no-repeat;
-    background-position: 50% 0%;
-    min-height: 550px;
-    height:650px;
+/*---------- BUTTONS ANIMATIONS ----------*/
+#next-events >a, #support-us >a{
+    top:0;
+    transition: top ease 80ms;
+    position:relative;
+}
+#next-events >a:hover, #support-us >a:hover{
+    top:-1px;
 }
 
-header figure{
+/*---------- HEADER (NAV & HERO )-----------*/
+
+header{
+    position:relative;
+    max-width:100%;
+}
+
+.header-background figure{
+    position: absolute;
+    z-index:-1;
+    overflow: hidden;
+    width: 100%;
+    top: -33%;
+}
+.header-background figure img{
+    width:150%;
+}
+
+header figure.logo {
     min-width:65px;
 }
 
@@ -74,13 +92,16 @@ section h3{
 }
 /*---------- SECTION INTRO -----------*/
 #introduction{
-    margin:-30px auto 50px;
+    margin-top: 80%;
 }
 
 /*---------- SECTION ICONS-STRIPE -----------*/
 
 #icons-stripe .icon-container{
-    max-width:170px;
+    max-width:150px;
+}
+#icons-stripe .icon-container figure{
+    max-width:90px;
 }
 
 /*---------- SECTION NEXT-EVENTS -----------*/
@@ -88,9 +109,13 @@ section h3{
     margin:-4px 4px 0 0;
 }
 
+#next-events .card >img{
+    min-height: 250px;
+}
+
 /*---------- SECTION SUPPORT-US -----------*/
 #support-us figure{
-    max-width:110px;
+    max-width:150px;
 }
 #support-us .btns-container a:nth-child(1){
     background-color:#CFD6DF;
@@ -130,6 +155,76 @@ footer p:last-child{
     font-size:8px;
 }
 
+/*---------- MEDIA QUERIES -----------*/
+@media screen and (min-width:400px){
+    .header-background figure{
+        top:-85%;
+    }
+}
+
+@media screen and (min-width:530px){
+    .header-background figure{
+        top:-125%;
+    }
+    .header-title h1 {
+        font-size: 40px;
+    }
+    .header-title h1 span {
+        font-size: 31.5px;
+    }
+    #next-events >a, #support-us >a{
+        width:60%;
+    }
+}
+
+@media screen and (min-width:642px){
+    .header-background figure {
+        top: -70%;
+    }
+    .header-background figure img{
+        width:100%;
+    }
+    #introduction {
+        margin-top: 50%;
+    }
+    #support-us .btns-container a{
+        max-width:130px !important;
+    }
+}
+
+@media screen and (min-width:800px){
+    .header-background figure {
+        top: -120%;
+    }
+}
+
+@media screen and (min-width:1000px){
+    .header-background figure {
+        top: -170%;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .main-container{
+        -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2); 
+        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
+    }
+    #next-events >a, #support-us >a {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:1320px){
+    .header-background figure {
+        top: -200%;
+    }  
+}
+
+@media screen and (min-width:1400px){
+    .header-background figure {
+        top: -250%;
+    }  
+}
 
 
 
