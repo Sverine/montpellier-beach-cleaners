@@ -5,10 +5,10 @@
         <meta name="description" content="Montpellier Beach Master est une association à but non lucratif ayant pour but de féderer des bénévoles afin de nettoyer les plages aux alentours de Montpellier">
         <title>Montpellier Beacher Master | Proteger la méditérannée</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex">
+        <link rel="icon" type="image/png" href="images/flavicon.png" />
         <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -16,20 +16,22 @@
             <header>
                 <div class="header-background">
                     <figure class="mx-auto">
-                        <img src="images/montpellier-background.jpg">
+                        <img src="images/montpellier-background.jpg" alt="Image vue de haut de la méditérannée en arrière plan">
                     </figure>
                 </div>
                 <div class="row align-items-center mx-1">
-                    <figure class="logo col-1 m-0">
-                        <img src="images/logo-montpellier-beach-cleaners.png" class="w-100" alt="Logo de l'association Montpellier Beach Cleaners">
-                    </figure>
+                    <a class="col-1" href="index.html" title="Retour à l'accueil">
+                        <figure class="logo m-0">
+                            <img src="images/logo-montpellier-beach-cleaners.png" class="w-100" alt="Logo de l'association Montpellier Beach Cleaners">
+                        </figure>
+                    </a>
                     <nav class="navbar col d-flex flex-row-reverse">
                         <ul class="navbar-nav d-flex flex-row">
                             <li class="nav-bar-item mx-2">
-                                <a class="nav-link text-white text-uppercase" href="#">L'association</a>
+                                <a class="nav-link text-white text-uppercase" href="index.html" title="Accueil de Montpellier Beach Cleaners">L'association</a>
                             </li>
                             <li class="nav-bar-item mx-2">
-                                <a class="nav-link text-white text-uppercase" href="#">événements</a>
+                                <a class="nav-link text-white text-uppercase" href="events.html" title="Tous les prochains événements">événements</a>
                             </li>
                         </ul>
                     </nav>
@@ -43,11 +45,13 @@
                 <section id="introduction" class="row mx-auto container mb-5 col-md-8">
                     <h3 class="text-uppercase mb-4">l'association</h3>
                     <p class="text-start">
-                        Montpellier Beach Cleaners est une association luttant pour la préservation de la meditérannée.
+                        Montpellier Beach Cleaners est le nom donné aux bénévoles de l'association et qui participent aux nettoyages des plages des alentours de Montpellier.
+                        C'est une association à but non lucratif qui lutte pour la préservation de la meditérannée.<br>
+                        
                     </p>
                     <p class="text-start">
-                        Avec ses 200 bénévoles, c’est plusieurs centaines de plastiques retirés des plages chaques mois à travers nos événements 
-                        de ramassage organisés aux différentes plages des alentours de Montpellier.
+                        Avec ses 200 bénévoles, c’est plusieurs centaines de plastiques retirés des plages chaques mois à travers nos différentes 
+                        sessions de ramassage des déchets.
                     </p>
                 </section>
                 
@@ -102,7 +106,7 @@
                                         <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
                                     </svg>  
                                 18 bénévoles</p>
-                                <a href="#" class="btn text-white px-3">Je participe</a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalPalavas" class="btn text-white px-3">Je participe</a>
                             </div>
                         </div>
                         <div class="card col col-md-6 text-start shadow-sm mb-5 mx-md-2">
@@ -120,7 +124,7 @@
                                         <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
                                         <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
                                     </svg>  
-                                11 h</p>
+                                11 h 00</p>
                                 <p class="card-text">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#A3AFC1" class="bi bi-people-fill" viewBox="0 0 16 16">
                                         <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
@@ -128,17 +132,69 @@
                                     <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
                                     </svg>  
                                 7 bénévoles</p>
-                                <a href="#" class="btn text-white px-3">Je participe</a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalVic" class="btn text-white px-3">Je participe</a>
                             </div>
                         </div>
+                        
+                        <!-- MODALS -->
+                        <div class="modal fade" id="modalPalavas" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fw-bold">Palavas-les-flots</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body p-0 text-start">
+                                        <figure>
+                                            <img src="images/palavas-les-flots.jpg" alt="Photo de la plage de Palavas-les-flots">
+                                        </figure>
+                                        <div class="modal-body-message p-3">
+                                            <h6 class="fw-bold">Message de l'organisateur : </h6>
+                                            <p>Récemment, de nombreux déchets ont été aperçu à côté des terrains de beach volley.</p>
+                                            <p>Tu habites près de Palas-les-flots et tu es disponibles le 15 mai ? Viens nous aider !</p>
+                                            <p class="text-end fst-italic">Cyril</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn modal-button text-white" data-bs-dismiss="modal">Je participe</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="modalVic" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fw-bold">Vic la Gardiole</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body p-0 text-start">
+                                        <figure>
+                                            <img src="images/vic-la-gardiole.jpg" alt="Photo du canal de la plage des Aresquiers à Vic la Gardiole">
+                                        </figure>
+                                        <div class="modal-body-message p-3">
+                                            <h6 class="fw-bold">Message de l'organisateur : </h6>
+                                            <p>L’été approche, et les déchets s’accumulent au pont des Arresquiers entre Vic la Gardiole et Frontignan.</p>
+                                            <p>Nous avons besoin d’aide pour remettre le canal propre.</p>
+                                            <p class="text-end fst-italic">Manon</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn modal-button text-white" data-bs-dismiss="modal">Je participe</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <a class="btn text-white px-4 mx-auto">Plus d'événements</a>
+                    <a href="events.html" class="btn text-white px-4 mx-auto">Plus d'événements</a>
                 </section>
 
                 <section id="support-us" class="row mt-5 mx-auto container col-md-8">
                     <h3 class="text-uppercase">Nous soutenir</h3>
                     <figure class="mx-auto">
-                        <img src="images/underline-svg.svg">
+                        <img src="images/underline-svg.svg" alt="Séparateurs bleus en forme de vagues">
                     </figure>
                     <p>Montpellier Beach Cleaners est financé à 100% par les dons et adhésions des citoyens. </p>
                     <p>Votre aide nous donne les moyens d’agir et de garantir l’indépendance de notre association.</p>
@@ -148,23 +204,29 @@
                         <a class="btn m-1 my-2 w-50 text-white">20 €</a>
                         <a class="btn m-1 my-2 w-50 text-white">50 €</a>
                     </div>
-                    <a class="btn text-white mt-3 mx-auto">En savoir plus</a>
+                    <a class="btn text-white mt-3 mx-auto" title="Accéder à la page des dons">En savoir plus</a>
                 </section>
             </main>
 
             <footer>
                 <div class="footer-logo mt-5 pt-5">
-                    <figure class="mx-auto">
-                        <img src="images/logo-montpellier-beach-cleaners.png" alt="Logo de l'association Montpellier Beach Cleaners">
-                    </figure>
-                    <h1 style="display:none">Montpellier<span>beach cleaners</span></h1>
+                    <a href="/index.html" title="Retour à l'accueil">
+                        <figure class="mx-auto d-md-none">
+                            <img src="images/logo-montpellier-beach-cleaners.png" alt="Logo de l'association Montpellier Beach Cleaners">
+                        </figure>
+                    </a>
+                    <a href="/index.html" title="Retour à l'accueil">
+                        <figure class="mx-auto d-none d-md-block full">
+                            <img src="images/logo-montpellier-beach-cleaners-full.png" alt="Logo entier de l'association Montpellier Beach Cleaners">
+                        </figure>
+                    </a>
                 </div>
                 <nav class="navbar">
                     <ul class="navbar-nav mx-auto d-flex flex-column flex-md-row">
-                        <li class="nav-bar-item text-uppercase text-white m-2 fw-bold">l'association</li>
-                        <li class="nav-bar-item text-uppercase text-white m-2 fw-bold">événements</li>
-                        <li class="nav-bar-item text-uppercase text-white m-2 fw-bold">faire un don</li>
-                        <li class="nav-bar-item text-uppercase text-white m-2 fw-bold">nous contacter</li>
+                        <li class="nav-bar-item text-uppercase  m-2 fw-bold"><a class="nav-link text-white" href="index.html" title="Accueil de Montpellier Beach Cleaners">l'association</a></li>
+                        <li class="nav-bar-item text-uppercase  m-2 fw-bold"><a class="nav-link text-white" href="events.html" title="Tous les prochains événements">événements</a></li>
+                        <li class="nav-bar-item text-uppercase  m-2 fw-bold"><a class="nav-link text-white" href="" title="Faire un don à l'association">faire un don</a></li>
+                        <li class="nav-bar-item text-uppercase  m-2 fw-bold"><a class="nav-link text-white" href="" title="Nous contacter">nous contacter</a></li>
                     </ul>
                 </nav>
                 <div class="social-icons-container mx-auto mb-5">
