@@ -1,4 +1,6 @@
 /*---------- GENERAl ----------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+
 *{
     font-family: 'Montserrat', sans-serif;
 }
@@ -20,10 +22,10 @@ figure img{
 .header-title h2, #icons-stripe .icon-container p, #next-events a, #support-us >a{
     font-weight: 300;
 }
-section h3, .card-title{
+section h3, .card-title, #next-events.events >p{
     font-weight:700;
 }
-#icons-stripe, #next-events a, #support-us >a, footer{
+#icons-stripe, #next-events a, #support-us >a, footer, .modal-button{
     background-color: #10305E;
 }
 
@@ -43,7 +45,9 @@ header{
     position:relative;
     max-width:100%;
 }
-
+.header-background.events figure{
+    top: 0% !important;
+}
 .header-background figure{
     position: absolute;
     z-index:-1;
@@ -55,8 +59,12 @@ header{
     width:150%;
 }
 
+.header-background.events figure img{
+    width:200%;
+}
+
 header figure.logo {
-    min-width:65px;
+    min-width:45px;
 }
 
 header nav ul li a{
@@ -80,6 +88,9 @@ header nav {
     color:rgba(255, 255, 255, 0.6);
     font-size:22.5px;
 }
+.header-title h1 span.events{
+    line-height: normal;
+}
 
 .header-title h2{
     font-size:20px;
@@ -90,9 +101,12 @@ section h3{
     font-weight:700;
     font-size:30px;
 }
-/*---------- SECTION INTRO -----------*/
+/*---------- SECTION INTRO | HOW TO PARTICIPATE -----------*/
 #introduction{
     margin-top: 80%;
+}
+#introduction.events{
+    margin-top: 30%;
 }
 
 /*---------- SECTION ICONS-STRIPE -----------*/
@@ -110,7 +124,8 @@ section h3{
 }
 
 #next-events .card >img{
-    min-height: 250px;
+    /* min-height: 250px; */
+    height: 250px;
 }
 
 /*---------- SECTION SUPPORT-US -----------*/
@@ -133,6 +148,10 @@ section h3{
 /*---------- FOOTER -----------*/
 footer .footer-logo figure{
     max-width:50px;
+}
+
+footer .footer-logo figure.full{
+    max-width:200px;
 }
 
 footer nav li {
@@ -160,14 +179,23 @@ footer p:last-child{
     .header-background figure{
         top:-85%;
     }
+    .header-background.events figure{
+        top:-30% !important;
+    }
 }
 
 @media screen and (min-width:530px){
     .header-background figure{
         top:-125%;
     }
+    .header-background.events figure{
+        top:-50% !important;
+    }
     .header-title h1 {
         font-size: 40px;
+    }
+    #introduction.events {
+        margin-top: 35%;
     }
     .header-title h1 span {
         font-size: 31.5px;
@@ -181,11 +209,20 @@ footer p:last-child{
     .header-background figure {
         top: -70%;
     }
+    .header-background.events figure{
+        top:0% !important;
+    }
     .header-background figure img{
+        width:100%;
+    }
+    .header-background.events figure img{
         width:100%;
     }
     #introduction {
         margin-top: 50%;
+    }
+    #introduction.events {
+        margin-top: 25%;
     }
     #support-us .btns-container a{
         max-width:130px !important;
@@ -198,9 +235,21 @@ footer p:last-child{
     }
 }
 
+@media screen and (min-width:992px){
+    #next-events.events .card-containers .card{
+        min-height:489px;
+    }
+}
+
 @media screen and (min-width:1000px){
     .header-background figure {
         top: -170%;
+    }
+    .header-background.events figure {
+        top: -50% !important;
+    }
+    #introduction.events {
+        margin-top: 25%;
     }
 }
 
@@ -223,7 +272,10 @@ footer p:last-child{
 @media screen and (min-width:1400px){
     .header-background figure {
         top: -250%;
-    }  
+    }
+    .header-background.events figure {
+        top: -80% !important;
+    }
 }
 
 
